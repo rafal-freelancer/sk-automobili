@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SK Automobili Jaworzno — serwis aut amerykańskich i premium</title>
+<meta name="description" content="Warsztat w Jaworznie: pełny serwis dla każdego auta. Specjaliści od aut z USA i premium: skrzynie automatyczne, silniki, zawieszenia pneumatyczne, elektronika. Zabezpieczenia antykorozyjne, import z USA.">
+<meta property="og:title" content="SK Automobili — pełny serwis dla każdego auta. Specjaliści od aut z USA i premium.">
+<meta property="og:description" content="Serwis aut amerykańskich i premium w Jaworznie. ul. Katowicka 19d, tel. 664 775 959.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://skautomobili.pl/">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#000;--card:#0E0E10;--card2:#141417;--line:#242427;--white:#fff;--grey:#A1A1A6;--grey2:#86868B;--red:#E4002B;--red-h:#C40025;box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(56px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--black);color:var(--white);font-family:'Manrope','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+h1,h2,h3,p,figure,ul{margin:0}
+h1,h2{font-family:'Unbounded','Helvetica Neue',Arial,sans-serif;font-weight:600;letter-spacing:-.03em;line-height:1.06}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:6px}
+.red{color:var(--red)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:clamp(72px,10vw,120px) 0;position:relative}
+.head{text-align:center;max-width:760px;margin:0 auto clamp(36px,5vw,56px)}
+.head h2{font-size:clamp(28px,4.4vw,52px)}
+.head p{margin-top:14px;font-size:clamp(17px,2vw,20px);color:var(--grey)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:rgba(0,0,0,.78);backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav .wrap{height:56px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:'Unbounded',sans-serif;font-weight:600;font-size:15px;letter-spacing:.08em}
+.logo b{color:var(--red);font-weight:600}
+.links{display:flex;gap:28px;font-size:13px;color:#D2D2D7}
+.links a:hover{color:#fff}
+.call-sm{font-size:13px;font-weight:700;background:var(--red);padding:9px 16px;border-radius:999px}
+.call-sm:hover{background:var(--red-h)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:14px 26px;border-radius:999px;font:700 16px/1 'Manrope',sans-serif;background:var(--red);color:#fff;border:0;cursor:pointer;transition:background .2s,box-shadow .2s}
+.btn:hover{background:var(--red-h);box-shadow:0 0 30px rgba(228,0,43,.35)}
+.btn-ghost{background:transparent;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.28)}
+.btn-ghost:hover{background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1.5px #fff}
+.more{font-weight:700;font-size:15px;color:var(--red)}
+.more::after{content:" ›"}
+
+/* hero */
+.hero{padding-top:clamp(56px,8vw,96px);text-align:center;overflow:hidden;isolation:isolate}
+.glow{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.glow i{position:absolute;border-radius:50%;filter:blur(10px)}
+.glow .a{width:min(1200px,130vw);height:min(700px,90vw);left:50%;top:48%;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(228,0,43,.30),rgba(228,0,43,.10) 55%,transparent);animation:d1 18s ease-in-out infinite alternate}
+.glow .b{width:520px;height:520px;right:-160px;top:-180px;background:radial-gradient(closest-side,rgba(228,0,43,.18),transparent);animation:d2 22s ease-in-out infinite alternate}
+@keyframes d1{to{transform:translateX(-46%) scale(1.08)}}
+@keyframes d2{to{transform:translate(-60px,50px)}}
+.hero h1{font-size:clamp(30px,4.8vw,64px);max-width:22ch;margin:0 auto}
+.hero h1 .red{text-shadow:0 0 40px rgba(228,0,43,.35)}
+.hero .lead{margin:22px auto 0;max-width:50ch;font-size:clamp(17px,2vw,21px);color:var(--grey)}
+.actions{margin-top:32px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.hero-img{margin:clamp(44px,6vw,72px) auto 0;max-width:1120px;padding:0 20px}
+.hero-img .frame{border-radius:28px;overflow:hidden;aspect-ratio:16/9;background:var(--card);box-shadow:0 30px 120px rgba(228,0,43,.18),0 0 0 1px var(--line)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.frame.video{position:relative}
+.frame.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.facts{margin:28px auto 0;max-width:900px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 20px}
+.facts div{padding:18px 8px;border-top:1px solid var(--line)}
+.facts b{display:block;font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(22px,3vw,32px);letter-spacing:-.02em}
+.facts span{display:block;margin-top:4px;font-size:13px;color:var(--grey)}
+
+/* brands */
+.brands{padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
+.brands ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 36px;font-family:'Unbounded',sans-serif;font-weight:500;font-size:clamp(14px,1.6vw,17px);letter-spacing:.06em;text-transform:uppercase;color:#6E6E73}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.svc{grid-column:span 3;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px 26px;display:flex;flex-direction:column;gap:10px;transition:border-color .25s,box-shadow .25s,transform .25s}
+.svc:nth-child(1){grid-column:span 3}.svc:nth-child(2){grid-column:span 3}
+.svc:hover{border-color:rgba(228,0,43,.7);box-shadow:0 0 40px rgba(228,0,43,.16);transform:translateY(-2px)}
+.svc h3{font-family:'Unbounded',sans-serif;font-weight:600;font-size:20px;letter-spacing:-.02em;margin-top:8px}
+.svc p{color:var(--grey);font-size:15px;flex:1}
+
+/* specialisation */
+.spec{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(32px,6vw,80px);align-items:start}
+.spec h2{font-size:clamp(28px,4vw,48px)}
+.spec .intro p{margin-top:16px;color:var(--grey);font-size:17px}
+.spec .intro .btn{margin-top:28px}
+.spec ul{list-style:none;padding:0}
+.spec li{padding:20px 0;border-top:1px solid var(--line);display:grid;gap:4px}
+.spec li:last-child{border-bottom:1px solid var(--line)}
+.spec li b{font-size:18px}
+.spec li span{color:var(--grey);font-size:15px}
+
+/* works */
+.featured{display:grid;grid-template-columns:1.4fr 1fr;background:var(--card);border:1px solid var(--line);border-radius:28px;overflow:hidden;margin-bottom:12px}
+.featured .ph{aspect-ratio:16/10;background:var(--card2)}
+.featured img{width:100%;height:100%;object-fit:cover}
+.featured .txt{padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;justify-content:center;gap:14px}
+.tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);border:1px solid rgba(228,0,43,.5);border-radius:999px;padding:6px 12px}
+.featured h3{font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(24px,3vw,34px);letter-spacing:-.02em;line-height:1.1}
+.featured p{color:var(--grey);font-size:17px}
+.works{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.work{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.work-img{aspect-ratio:16/10;background:var(--card2);overflow:hidden}
+.work-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.work:hover img{transform:scale(1.04)}
+.work figcaption{padding:16px 18px 18px;display:grid;gap:4px}
+.work b{font-size:16px}
+.work span{font-size:14px;color:var(--grey)}
+
+/* people */
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.person{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px}
+.av{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Unbounded',sans-serif;font-weight:600;font-size:20px;background:rgba(228,0,43,.12);color:var(--red);box-shadow:inset 0 0 0 1px rgba(228,0,43,.5)}
+.person h3{margin:18px 0 8px;font-family:'Unbounded',sans-serif;font-weight:600;font-size:22px}
+.person p{color:var(--grey);font-size:15px}
+.values{margin-top:12px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.values div{padding:22px 4px;border-top:2px solid var(--red)}
+.values b{display:block;font-size:17px}
+.values span{display:block;margin-top:6px;font-size:14px;color:var(--grey)}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;min-height:44px;font-weight:700;font-size:17px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:12px;height:12px;background:linear-gradient(var(--red),var(--red)) center/12px 2px no-repeat,linear-gradient(var(--red),var(--red)) center/2px 12px no-repeat;transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding-bottom:20px;color:var(--grey)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:12px}
+.info{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(28px,4vw,44px);display:flex;flex-direction:column;gap:22px}
+.info h3{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--grey2)}
+.info p{font-size:18px;margin-top:6px}
+.info .big{font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(22px,2.6vw,30px);letter-spacing:-.02em}
+.info .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+form{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(24px,4vw,40px);display:grid;gap:14px}
+form h3{font-family:'Unbounded',sans-serif;font-weight:600;font-size:22px;margin-bottom:4px}
+label{display:block;font-size:13px;font-weight:600;color:#D2D2D7;margin-bottom:6px}
+input,textarea{font:inherit;font-size:16px;width:100%;padding:13px 16px;border-radius:14px;border:1px solid #3A3A3C;background:#1C1C1E;color:#fff}
+input{min-height:50px}
+textarea{min-height:120px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 3px rgba(228,0,43,.3)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--grey)}
+.consent input{width:18px;height:18px;min-height:0;margin-top:2px;accent-color:var(--red)}
+.consent a{text-decoration:underline}
+
+footer{border-top:1px solid var(--line);padding:40px 0 calc(40px + env(safe-area-inset-bottom,0px));color:var(--grey2);font-size:13px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+footer h4{margin:0 0 10px;font-size:13px;color:#fff}
+footer a,footer span{display:block;margin:6px 0}
+footer a:hover{color:#fff}
+.fbottom{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.fbottom a{display:inline;margin:0 0 0 16px}
+
+/* mobile call bar */
+.callbar{display:none}
+
+/* animations */
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.js .hero h1,.js .hero .lead,.js .hero .actions,.js .hero-img,.js .facts{opacity:0}
+.js.ready .hero h1{animation:up .8s cubic-bezier(.2,.7,.2,1) both}
+.js.ready .hero .lead{animation:up .8s cubic-bezier(.2,.7,.2,1) .12s both}
+.js.ready .hero .actions{animation:up .8s cubic-bezier(.2,.7,.2,1) .24s both}
+.js.ready .hero-img{animation:up 1s cubic-bezier(.2,.7,.2,1) .38s both}
+.js.ready .facts{animation:up .8s cubic-bezier(.2,.7,.2,1) .55s both}
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .svc.reveal.in:hover{transform:translateY(-2px)}
+
+@media (max-width:980px){.links{display:none}.svc-grid{grid-template-columns:1fr 1fr}.svc,.svc:nth-child(1),.svc:nth-child(2){grid-column:auto}.works{grid-template-columns:1fr 1fr}.spec,.featured,.contact{grid-template-columns:1fr}.values{grid-template-columns:1fr 1fr}.fgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){
+  body{padding-bottom:76px}
+  .svc-grid,.people,.row{grid-template-columns:1fr}
+  .works{grid-template-columns:1fr 1fr;gap:10px}
+  .work figcaption{padding:12px 12px 14px}.work span{font-size:13px}
+  .actions .btn{width:100%}
+  .hero-img .frame{border-radius:20px;aspect-ratio:16/9}
+  .facts{grid-template-columns:repeat(3,1fr);gap:6px}.facts span{font-size:12px}
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;gap:8px}
+  .callbar a{flex:1;min-height:52px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+  .callbar .c1{background:var(--red);box-shadow:0 8px 30px rgba(228,0,43,.4)}
+  .callbar .c2{background:rgba(28,28,30,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid #3A3A3C}
+  .fbottom a{margin:0 12px 0 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.glow i{animation:none}.js .hero *,.js .hero-img,.js .facts,.js .reveal{opacity:1!important;transform:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#top">SK <b>AUTOMOBILI</b></a>
+  <nav class="links" aria-label="Menu"><a href="#uslugi">Usługi</a><a href="#specjalizacje">Specjalizacje</a><a href="#realizacje">Realizacje</a><a href="#o-nas">O nas</a><a href="#kontakt">Kontakt</a></nav>
+  <a class="call-sm" href="tel:+48664775959">Zadzwoń</a>
+</div></header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="glow" aria-hidden="true"><i class="a"></i><i class="b"></i></div>
+  <div class="wrap">
+    <h1>Pełny serwis dla każdego auta. <span class="red">Specjaliści od aut z USA i premium.</span></h1>
+    <p class="lead">Mechanika, skrzynie, elektronika i zabezpieczenia w Jaworznie. Obsługujemy każde auto, a na co dzień także krążowniki z USA, Maserati, Jaguary, Ferrari i Porsche.</p>
+    <div class="actions"><a class="btn" href="tel:+48664775959">Zadzwoń: 664 775 959</a><a class="btn btn-ghost" href="#kontakt">Wyślij wiadomość</a></div>
+  </div>
+  <div class="hero-img"><div class="frame video"><iframe src="https://www.youtube-nocookie.com/embed/TMvttzA-k2k?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=TMvttzA-k2k&amp;playsinline=1&amp;rel=0&amp;modestbranding=1" title="SK Automobili, film z warsztatu" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="eager"></iframe></div></div>
+  <div class="facts">
+    <div><b>30+ lat</b><span>doświadczenia w mechanice</span></div>
+    <div><b>USA</b><span>i marki premium to specjalizacja</span></div>
+    <div><b>Pn–Pt 9–18</b><span>ul. Katowicka 19d</span></div>
+  </div>
+</section>
+
+<div class="brands" aria-label="Marki, które serwisujemy"><ul><li>Chevrolet</li><li>Dodge</li><li>Maserati</li><li>Jaguar</li><li>Porsche</li><li>Ferrari</li><li>Mercedes</li><li>Cadillac</li></ul></div>
+
+<section id="uslugi"><div class="wrap">
+  <div class="head reveal"><h2>Wszystko dla Twojego auta. <span class="red">W jednym miejscu.</span></h2><p>Od serwisu i diagnostyki, przez zabezpieczenie antykorozyjne, po import i sprzedaż aut z USA.</p></div>
+  <div class="svc-grid">
+      <a class="svc reveal" href="https://skautomobili.pl/serwis-samochodow-amerykanskich-w-jaworznie/"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20h16M6 14l3-7h6l3 7M7 20v-3m10 3v-3" stroke="#E4002B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Serwis samochodowy</h3><p>Skrzynie, silniki, zawieszenia, elektronika. Specjalizacja: auta amerykańskie i marki premium.</p><span class="more">Więcej</span></a>
+      <a class="svc reveal" href="#kontakt"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z" stroke="#E4002B" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#E4002B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Zabezpieczenie antykorozyjne</h3><p>Konserwacja podwozia i profili zamkniętych. Chcesz więcej? Pakiet all in: antykorozja i zabezpieczenie lakieru na korzystnych warunkach.</p><span class="more">Zapytaj o pakiet</span></a>
+      <a class="svc reveal" href="https://skautomobili.pl/import-samochodow-z-usa/"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18M12 3a9 9 0 110 18 9 9 0 010-18" stroke="#E4002B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Import z USA</h3><p>Wyszukamy, sprowadzimy i przygotujemy auto zza oceanu.</p><span class="more">Więcej</span></a>
+      <a class="svc reveal" href="https://skautomobili.pl/skup-i-sprzedaz-aut-w-jaworznie/"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 7h11l-3-3M17 17H6l3 3" stroke="#E4002B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Skup i sprzedaż aut</h3><p>Kupujemy i sprzedajemy nietypowe auta, przygotowane fachową ręką.</p><span class="more">Więcej</span></a>
+  </div>
+</div></section>
+
+<section id="specjalizacje"><div class="wrap spec">
+  <div class="intro reveal">
+    <h2>W tym jesteśmy <span class="red">najmocniejsi.</span></h2>
+    <p>Specjalizujemy się w autach amerykańskich i nietypowych markach premium. Części niedostępne na rynku detalicznym sprowadzamy dzięki własnym kontaktom.</p>
+    <a class="btn" href="https://skautomobili.pl/serwis-samochodow-amerykanskich-w-jaworznie/">Pełna oferta serwisu</a>
+  </div>
+  <ul class="reveal"><li><b>Automatyczne skrzynie biegów</b><span>Regeneracje, konwertery, pompy, elektrozawory. Części niedostępne w detalu sprowadzamy sami.</span></li><li><b>Silniki</b><span>Remonty kapitalne, rozrządy, głowice, układy chłodzenia.</span></li><li><b>Zawieszenia</b><span>Klasyczne, pneumatyczne i hydrauliczne.</span></li><li><b>Auto elektronika</b><span>Sterowniki i moduły, kodowanie funkcji, diagnostyka komputerowa, polskie menu w autach z USA.</span></li><li><b>Renowacja</b><span>Mechanika, lakier, karoseria i wnętrze, razem ze sprawdzonymi podwykonawcami.</span></li><li><b>Serwis bieżący</b><span>Oleje renomowanych marek, hamulce, zawieszenie. Na co dzień, bez czekania tygodniami.</span></li></ul>
+</div></section>
+
+<section id="realizacje"><div class="wrap">
+  <div class="head reveal"><h2>Realizacje.</h2><p>Każde zlecenie to osobna historia. Kilka aut, które ostatnio u nas gościły.</p></div>
+  <article class="featured reveal">
+    <div class="ph"><img onerror="this.style.visibility='hidden'" src="https://skautomobili.pl/wp-content/uploads/2025/05/Maserati-Quattroporte-1-1024x640.png" alt="Maserati Quattroporte" loading="lazy"></div>
+    <div class="txt"><span class="tag">Trudny przypadek</span><h3>Maserati Quattroporte</h3><p>Naprawa układu elektronicznego, z którym trzy inne warsztaty nie dały sobie rady.</p></div>
+  </article>
+  <div class="works">
+      <figure class="work reveal"><div class="work-img"><img onerror="this.style.visibility='hidden'" src="https://skautomobili.pl/wp-content/uploads/2025/05/Mercedes-S500-1-1024x640.png" alt="Mercedes S500: Naprawa wspomagania i zawieszenia pneumatycznego." loading="lazy"></div><figcaption><b>Mercedes S500</b><span>Naprawa wspomagania i zawieszenia pneumatycznego.</span></figcaption></figure>
+      <figure class="work reveal"><div class="work-img"><img onerror="this.style.visibility='hidden'" src="https://skautomobili.pl/wp-content/uploads/2025/05/Chevrolet-Corvette-C3-1024x640.png" alt="Chevrolet Corvette C3: Uruchomienie silnika po renowacji." loading="lazy"></div><figcaption><b>Chevrolet Corvette C3</b><span>Uruchomienie silnika po renowacji.</span></figcaption></figure>
+      <figure class="work reveal"><div class="work-img"><img onerror="this.style.visibility='hidden'" src="https://skautomobili.pl/wp-content/uploads/2025/05/Chevrolet-Silverado-GMT900-1024x640.png" alt="Chevrolet Silverado GMT900: Pełna regeneracja skrzyni automatycznej." loading="lazy"></div><figcaption><b>Chevrolet Silverado GMT900</b><span>Pełna regeneracja skrzyni automatycznej.</span></figcaption></figure>
+      <figure class="work reveal"><div class="work-img"><img onerror="this.style.visibility='hidden'" src="https://skautomobili.pl/wp-content/uploads/2025/05/Chevrolet-Suburban-1024x640.png" alt="Chevrolet Suburban K2UL: Regeneracja automatycznej skrzyni biegów." loading="lazy"></div><figcaption><b>Chevrolet Suburban K2UL</b><span>Regeneracja automatycznej skrzyni biegów.</span></figcaption></figure>
+      <figure class="work reveal"><div class="work-img"><img onerror="this.style.visibility='hidden'" src="https://skautomobili.pl/wp-content/uploads/2025/05/Dodge-Durango-1024x640.png" alt="Dodge Durango: Wymiana radaru ACC, naprawa sond, zmiana softu skrzyni ZF8HP." loading="lazy"></div><figcaption><b>Dodge Durango</b><span>Wymiana radaru ACC, naprawa sond, zmiana softu skrzyni ZF8HP.</span></figcaption></figure>
+      <figure class="work reveal"><div class="work-img"><img onerror="this.style.visibility='hidden'" src="https://skautomobili.pl/wp-content/uploads/2025/05/Chevrolet-Trailblazer-1024x640.png" alt="Chevrolet Trailblazer: Wymiana przewodów olejowych skrzyni biegów." loading="lazy"></div><figcaption><b>Chevrolet Trailblazer</b><span>Wymiana przewodów olejowych skrzyni biegów.</span></figcaption></figure>
+      <figure class="work reveal"><div class="work-img"><img onerror="this.style.visibility='hidden'" src="https://skautomobili.pl/wp-content/uploads/2025/05/Citroen-C6-1024x768.png" alt="Citroën C6 2.7 HDi: Pełna odbudowa silnika." loading="lazy"></div><figcaption><b>Citroën C6 2.7 HDi</b><span>Pełna odbudowa silnika.</span></figcaption></figure>
+      <figure class="work reveal"><div class="work-img"><img onerror="this.style.visibility='hidden'" src="https://skautomobili.pl/wp-content/uploads/2025/05/Hyundai-i30-1024x768.png" alt="Hyundai i30: Oklejenie folią PPF, pełny przód." loading="lazy"></div><figcaption><b>Hyundai i30</b><span>Oklejenie folią PPF, pełny przód.</span></figcaption></figure>
+  </div>
+</div></section>
+
+<section id="o-nas"><div class="wrap">
+  <div class="head reveal"><h2>Rodzinna firma. <span class="red">Ojciec, syn i przyjaciel.</span></h2><p>Nie jesteśmy typowym warsztatem. To miejsce stworzone przez miłośników motoryzacji dla miłośników motoryzacji.</p></div>
+  <div class="people"><div class="person reveal"><span class="av">S</span><h3>Szymon</h3><p>Mechanik z ponad 30-letnim doświadczeniem i specjalista od skrzyń biegów. Serce warsztatu: pilnuje organizacji pracy i tego, żeby każda naprawa była zrobiona perfekcyjnie.</p></div><div class="person reveal"><span class="av">K</span><h3>Kacper</h3><p>Współtwórca marki. Rozwinął zabezpieczenia antykorozyjne i import z USA. Prowadzi kontakt z klientami i wyszukuje nietypowe auta.</p></div><div class="person reveal"><span class="av">K</span><h3>Karol</h3><p>Specjalista od zabezpieczenia lakieru i współorganizator importu z USA. Razem z Kacprem od początku buduje ten dział.</p></div></div>
+  <div class="values reveal">
+    <div><b>Pasja</b><span>Każde auto traktujemy jak własne.</span></div>
+    <div><b>Indywidualne podejście</b><span>Liczy się Twój czas, budżet i potrzeby.</span></div>
+    <div><b>Koszty w dół, jakość w górę</b><span>Szukamy rozwiązań, które oszczędzą Twój portfel.</span></div>
+    <div><b>Doświadczenie</b><span>Lata praktyki z najbardziej wymagającymi markami.</span></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="head reveal"><h2>Najczęstsze pytania.</h2></div>
+  <div class="faq reveal"><details><summary>Jakie samochody obsługujecie?</summary><p>Specjalizujemy się w autach amerykańskich i nietypowych markach premium, takich jak Jaguar, Maserati, Porsche czy Ferrari. Naprawiamy też wszystkie inne pojazdy, od współczesnych po klasyki.</p></details><details><summary>Czy naprawiacie automatyczne skrzynie biegów?</summary><p>Tak, to jedna z naszych głównych specjalizacji. Remontujemy skrzynie w autach współczesnych i zabytkowych, z dostępem do trudno dostępnych części.</p></details><details><summary>Czy naprawiacie zawieszenie pneumatyczne?</summary><p>Tak. Zajmujemy się zawieszeniami standardowymi, pneumatycznymi i hydraulicznymi.</p></details><details><summary>Czy wgracie polskie menu do auta z USA?</summary><p>Tak. Wgrywamy polskie menu do aut sprowadzanych z zagranicy, szczególnie z USA.</p></details><details><summary>Czy zrobicie u Was pełną renowację?</summary><p>Tak. Razem ze sprawdzonymi fachowcami robimy mechanikę, lakier i tapicerkę.</p></details></div>
+</div></section>
+
+<section id="kontakt"><div class="wrap">
+  <div class="head reveal"><h2>Przywieź do nas <span class="red">swoje auto.</span></h2></div>
+  <div class="contact">
+    <div class="info reveal">
+      <div><h3>Adres</h3><p>ul. Katowicka 19d<br>43-603 Jaworzno</p></div>
+      <div><h3>Godziny</h3><p>Poniedziałek – piątek, 9:00–18:00</p></div>
+      <div><h3>Telefon</h3><p class="big"><a href="tel:+48664775959">664 775 959</a></p></div>
+      <div><h3>E-mail</h3><p><a href="mailto:biuro@skautomobili.pl">biuro@skautomobili.pl</a></p></div>
+      <div class="btns"><a class="btn" href="tel:+48664775959">Zadzwoń</a><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Katowicka+19d+Jaworzno" target="_blank" rel="noopener">Wyznacz trasę</a></div>
+    </div>
+    <!-- Podłącz action do obecnego formularza / CRM -->
+    <form class="reveal" action="#" method="post">
+      <h3>Masz pytanie? Napisz.</h3>
+      <div><label for="n">Imię i nazwisko</label><input id="n" name="imie_nazwisko" autocomplete="name" required></div>
+      <div class="row">
+        <div><label for="e">E-mail</label><input id="e" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="t">Telefon</label><input id="t" name="telefon" type="tel" inputmode="tel" autocomplete="tel"></div>
+      </div>
+      <div><label for="m">Model samochodu</label><input id="m" name="model" placeholder="np. Dodge Durango 2019"></div>
+      <div><label for="w">Wiadomość</label><textarea id="w" name="wiadomosc" required></textarea></div>
+      <label class="consent"><input type="checkbox" name="rodo" required><span>Potwierdzam zapoznanie się z <a href="https://skautomobili.pl/polityka-prywatnosci/">polityką prywatności</a> i zgadzam się na przetwarzanie danych w celu obsługi zapytania.</span></label>
+      <button class="btn" type="submit">Wyślij wiadomość</button>
+    </form>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><a class="logo" href="#top" style="color:#fff">SK <b>AUTOMOBILI</b></a><span>Warsztat samochodowy: serwis, zabezpieczenia, części.</span></div>
+    <div><h4>Usługi</h4><a href="https://skautomobili.pl/serwis-samochodow-amerykanskich-w-jaworznie/">Serwis samochodowy</a><a href="#kontakt">Zabezpieczenie antykorozyjne</a><a href="https://skautomobili.pl/import-samochodow-z-usa/">Import z USA</a><a href="https://skautomobili.pl/skup-i-sprzedaz-aut-w-jaworznie/">Skup i sprzedaż</a></div>
+    <div><h4>Kontakt</h4><span>ul. Katowicka 19d, 43-603 Jaworzno</span><a href="tel:+48664775959">+48 664 775 959</a><a href="mailto:biuro@skautomobili.pl">biuro@skautomobili.pl</a></div>
+    <div><h4>Social media</h4><a href="https://www.facebook.com/sk.automobili" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/sk.automobili/" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+  <div class="fbottom"><span>© 2026 SK Automobili</span><span><a href="https://skautomobili.pl/regulamin-serwisu-internetowego-sk-automobili/">Regulamin</a><a href="https://skautomobili.pl/polityka-prywatnosci/">Polityka prywatności</a></span></div>
+</div></footer>
+
+<div class="callbar"><a class="c1" href="tel:+48664775959">Zadzwoń</a><a class="c2" href="#kontakt">Napisz</a></div>
+
+<script>
+(function(){
+  var root=document.documentElement,go=function(){root.classList.add('ready')};
+  Promise.race([document.fonts?document.fonts.ready:Promise.resolve(),new Promise(function(r){setTimeout(r,1000)})]).then(go);
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
